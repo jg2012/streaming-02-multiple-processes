@@ -5,3 +5,33 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+
+## Results after 3 secons ## 
+
+(base) joseguzman@Joses-MacBook-Pro-2 streaming-02-multiple-processes % /usr/local/bin/python3 /Users/joseguzman/Library/CloudStorage/OneDrive-nwmissouri.edu/Summer1/44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-09 06:25:24,240 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-09 at 06:25 AM
+  Operating System: posix Darwin 23.4.0
+  Python Version:   3.12.2
+  Path to Interpreter:  /usr/local/bin/python3
+======================================================================
+
+2024-05-09 06:25:24,240 - INFO - Called recreate_database().
+2024-05-09 06:25:24,240 - INFO - Called drop_table().
+2024-05-09 06:25:24,241 - INFO - Table 'pets' dropped successfully.
+2024-05-09 06:25:24,241 - INFO - Called create_table().
+2024-05-09 06:25:24,242 - INFO - Table 'pets' created successfully.
+2024-05-09 06:25:24,337 - INFO - Called process_one().
+2024-05-09 06:25:24,337 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-09 06:25:24,337 - INFO - Called process_three().
+2024-05-09 06:25:24,337 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-09 06:25:24,338 - INFO - Called process_two().
+2024-05-09 06:25:24,338 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-09 06:25:27,344 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-09 06:25:29,534 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2024-05-09 06:25:29,534 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-09 06:25:29,545 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2024-05-09 06:25:29,546 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+(base) joseguzman@Joses-MacBook-Pro-2 streaming-02-multiple-processes % 

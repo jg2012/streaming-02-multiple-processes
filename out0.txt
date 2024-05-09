@@ -5,3 +5,31 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+
+## Results after 1 second ##
+
+(base) joseguzman@Joses-MacBook-Pro-2 streaming-02-multiple-processes % /usr/local/bin/python3 /Users/joseguzman/Library/CloudStorage/OneDrive-nwmissouri.edu/Summer1/44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-09 06:28:53,859 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-09 at 06:28 AM
+  Operating System: posix Darwin 23.4.0
+  Python Version:   3.12.2
+  Path to Interpreter:  /usr/local/bin/python3
+======================================================================
+
+2024-05-09 06:28:53,860 - INFO - Called recreate_database().
+2024-05-09 06:28:53,860 - INFO - Called drop_table().
+2024-05-09 06:28:53,861 - INFO - Table 'pets' dropped successfully.
+2024-05-09 06:28:53,862 - INFO - Called create_table().
+2024-05-09 06:28:53,862 - INFO - Table 'pets' created successfully.
+2024-05-09 06:28:53,961 - INFO - Called process_one().
+2024-05-09 06:28:53,961 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-09 06:28:53,961 - INFO - Called process_three().
+2024-05-09 06:28:53,961 - INFO - Called process_two().
+2024-05-09 06:28:53,961 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-09 06:28:53,961 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-09 06:28:54,968 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-09 06:28:56,982 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-09 06:28:59,062 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+(base) joseguzman@Joses-MacBook-Pro-2 streaming-02-multiple-processes % 
