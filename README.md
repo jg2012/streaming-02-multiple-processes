@@ -1,4 +1,7 @@
-# streaming-02-multiple-processes
+# Jose Guzman's Streaming Project 
+
+## streaming-02-multiple-processes'
+
 
 > Multiple processes accessing a shared resource concurrently
 
